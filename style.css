@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+.content{
+    width: 100dvw;
+    height: 100dvh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    > .Content2{
+        > .butt{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            > button{
+                font-size: 20px;
+                border-radius: 15px;
+                border: none;
+                padding: 12px;
+                color: white;
+                background-color: #2ecc71;
+                
+                cursor: pointer;
+            }
+            > button:hover{
+                background-color: hsl(140, 70%, 35%); 
+                transform: scale(1.5);
+                cursor: pointer;
+            }
+            > button:nth-child(2){
+                background-color: #e74c3c;
+                
+            }
+        }
+    }
+}

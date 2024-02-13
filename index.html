@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="Content2">
+            <img src="./img/cat.gif" alt="i love you" height="300px"><br>
+
+            <center style="font-size: 20px;">will you be my valetine?</center><br>
+            <div class="butt">
+                
+                <button id="buttonYes">Yes 😍</button>
+                <button id="myButton">No 😖</button>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        var button = document.getElementById('myButton');
+
+        // Add event listener for hover effect
+        button.addEventListener('mouseover', function() {
+            var randomX = getRandomFloat(-500, 500); 
+            var randomY = getRandomFloat(-500, 100); 
+            
+            button.style.transform = 'translate(' + randomX + 'px, ' + randomY + 'px)';
+        });
+
+        var button2 = document.getElementById('buttonYes');
+
+        // Add event listener for hover effect
+        button2.addEventListener('click', function() {
+            
+            window.open ("https://drive.google.com/drive/folders/1T_1hWe_YAScZV7U-GHRcmOOitNgeBOna?usp=sharing" , "_blank");
+            setTimeout(function() {
+                window.location = "https://rencell.github.io/Janice/";
+            }, 200);
+          
+        });
+        function getRandomFloat(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+    </script>
+</body>
+</html>
